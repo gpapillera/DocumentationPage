@@ -1,0 +1,285 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 799px) {
+
+  /* nav .fa-solid {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  } */
+
+#navbar{
+  transition: 1s;
+  display: none;
+}
+
+.navg{
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: rgb(40, 42, 53);
+  color: #eeeef5;
+  align-items: left;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition: 1s;
+}
+
+.navg h1, .fa-solid{
+padding: 5px;
+}
+
+.navg h1{
+ margin: 5px auto;
+}
+  
+  #main-doc {
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+
+  main .main-section:first-of-type{
+    padding-top: 40px;
+  }
+
+}
+
+@media (max-width: 1199px) and (min-width: 769px) {
+  
+}
+
+/*SideBar*/
+
+#navbar {    
+  width: 215px;
+  height: 100%;
+  background-color: #eeeef5;
+  align-items: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  transition: 1s;
+  overflow-y: hidden;
+}
+
+#navbar header h1 {
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(40, 42, 53);
+  color: #eeeef5;
+}
+
+#navbar ul li {
+  padding: 28px 0px;
+  list-style-type: none;
+}
+
+#navbar ul li a {
+  color: rgb(40, 42, 53);
+  position: absolute;
+  padding-left: 0px;
+  transition: 0.4s;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#navbar ul li a:hover {
+  padding-left: 10px;
+  transition: 0.4s;
+  color: rgb(128, 133, 165);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+#navbar ul li:last-of-type{
+  padding: unset;
+  padding-top: .5em;
+}
+
+.fa-solid{
+  display: none;
+}
+
+/*Main*/
+
+main {
+  margin-left: 250px;
+  margin-top: 20px;
+  /* margin-right: 30px; */
+  width: 80%;
+  background-color: rgb(255,255,255);
+  min-width: 400px;
+}
+
+.pic{
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 4px;
+}
+
+.thck {
+  height: 4px;
+  background-color: rgb(128, 133, 165);
+  border: none;
+  border-radius: 2px;
+  padding-right: 3px;
+}
+
+.tin {
+  height: 2px;
+  background-color: rgb(234, 235, 241);
+  border: none;
+  margin: 8px 0;
+  padding-right: 3px;
+}
+
+h3 {
+  padding-left: 0.4rem;
+  padding-top: 10px;
+}
+
+.hh{
+  display: none;
+}
+
+h4 {
+  padding-top: 5px;
+}
+
+.h1{
+  font-weight: 800;
+  font-size: 25px;
+}
+
+p,
+li,
+h4 {
+  padding: 0.4em;
+  font-size: large;
+}
+
+ul {
+  padding-left: 1.3rem;
+}
+
+ol{
+    padding-left: 1.3rem;
+}
+
+code {
+  font-size: 1.3em;
+  background-color: #e0e0e7;
+  padding: 0.2rem;
+  color: rgb(165, 104, 19);
+  margin: .8em 0;
+  border-radius: 2px;
+}
+
+.tip{
+    background-color: #e5f1ac;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    padding-right: 10px;
+}
+
+pre {
+  padding-left: 0.3rem;
+}
+
+.main-section {
+  padding-top: 1.2rem;
+}
+
+#html_text_formatting {
+  padding-bottom: 30px;
+}
+
+/* table */
+
+.tag {
+  background: #0a0a23;
+  color: #fff;
+  padding-left: 0.8em;
+  margin: 0 -2px;
+  font-weight: bold;
+  width: 4.5rem;
+  z-index: 1;
+  gap: 4rem;
+  text-align: left;
+}
+
+.table-wrap {
+  padding: 0 0.75rem 1.5rem 0.75rem;
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+  width: 90%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+tbody td {
+  width: 100vw;
+  min-width: 4rem;
+  max-width: 4rem;
+  text-align: left;
+  padding: 0.3em;
+  padding-left: 0.8em;
+}
+
+tbody th {
+  width: calc(100% - 12rem);
+}
+
+
+
+
+/* footer */
+
+main section:last-of-type {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.fut-logo img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin: 30px auto;
+}
+
+a {
+  color: #0a0a23;
+}
+
+a:visited {
+  color: rgb(128, 133, 165);
+}
+
+a:hover {
+  color: rgb(26, 189, 61);
+}
+
+a:active {
+  color: #0a0a23;
+}
